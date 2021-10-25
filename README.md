@@ -1,12 +1,12 @@
 # .IncludeAll() Extension for LiteDB v5
-Original author: Chiko
+Original author: Chiko  
 This extension class allows you to .IncludeAll subdocuments referenced in the registered entities in LiteDB v5.
 
 ## Warning:
 This package has not been heavily tested yet. Code may still needs to be polished. Issues and pull requests are welcome.
 
 ## How to Use
-##### Setting up
+#### Setting up
 Add the package in the project.
 ```dotnetcli
 dotnet add package LiteDB.Helper.IncludeAll
@@ -17,7 +17,7 @@ Import using.
 using LiteDB.Helper.IncludeAll;
 ```
 
-##### _Register_
+#### _Register_
 Register the entities to get included on `.IncludeAll()`
 Define which entity shall dereference which subdocument, and with `MemberExpression`, point out what property should be dereferenced. 
 For example:
@@ -30,7 +30,7 @@ LiteDBHelper.Register<Recipe, MaterialInRecipe>(r => r.Materials, "materials");
 ```
 _Note: The `Register` statement creates the `DbRef` for you in the global `BsonMapper`.  
 
-##### To include all
+#### Finally, IncludeAll()
 The class `LiteDBHelper` defines an extension method for `ILiteCollection<T>`, so for any collection, you can, for example
 ```csharp
 var result = someCollection.IncludeAll().FindAll().ToList();
