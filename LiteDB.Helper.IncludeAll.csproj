@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>LiteDB.Helper.IncludeAll</PackageId>
+    <Version>0.1.0</Version>
+    <Authors>Chiko</Authors>
+    <Title>
+      .IncludeAll() for LiteDB v5
+    </Title>
+    <Description>
+      This extension class allows you to .IncludeAll subdocuments referenced in the registered entities in LiteDB v5.
+    </Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="LiteDB" Version="5.0.11" />
+  </ItemGroup>
+
+</Project>
