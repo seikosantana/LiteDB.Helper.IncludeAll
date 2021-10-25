@@ -91,4 +91,5 @@ public class Test
 ```
 
 #### Some Tips
-Inspect the database using `LiteDB.Studio` to make sure data stored as references.
+Inspect the database using [`LiteDB.Studio`](https://github.com/mbdavid/LiteDB.Studio) to make sure data stored as references.  
+Looking for Linux version? Hope [this](https://github.com/seikosantana/LiteDB.Studio) helps.
